@@ -13,7 +13,7 @@ pv.VmlScene.label = function(scenes) {
     if ( s.cursor ) { attr.cursor = s.cursor; }
 
     // measure text
-    var txt = s.text.replace( /\s+/g, '\xA0' )
+    var txt = s.text.replace( /\s+/g, '\xA0' ).replace( /^\xA0+|\xA0+$/, '' )
       , label = vml.text_dims( txt, s.font )
       , dx1 = 0
       , dx2 = 100
