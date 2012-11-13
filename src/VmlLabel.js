@@ -20,7 +20,6 @@ pv.VmlScene.label = function(scenes) {
       , dy = 0
       , vTextAlign = 'left'
       ;
-      ;
 
     // rotated text
     if ( s.textAngle ) {
@@ -55,7 +54,7 @@ pv.VmlScene.label = function(scenes) {
         "d": "M" + dx1 + "," + dy + " L" + dx2 + "," + dy + " Z",
         "fill": fill.color,
         "fill-rule": "evenodd",
-        "fill-opacity": fill.opacity || null,
+        "fill-opacity": fill.opacity || null
       });
 
       // bind text to path
